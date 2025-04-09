@@ -86,6 +86,6 @@ def get_fundingrate(symbol: str):
 
      return{'Error': "no {'fundingRate'} key found in the responce."}
 
-@app.get('/fundingrate/{symbol}')
+@app.get('/fundingRate/{symbol}')
 def fetch_fundingrate(symbol: str):
      return get_fundingrate(symbol.upper())
